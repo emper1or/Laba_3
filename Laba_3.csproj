@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CA1683D9-6D24-4C68-A027-6BA6D5BB546F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Laba</RootNamespace>
-    <AssemblyName>Laba</AssemblyName>
+    <RootNamespace>Laba_3</RootNamespace>
+    <AssemblyName>Laba_3</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Something\ArgsofTaxiDriver.cs" />
+    <Compile Include="Something\ArgsOfTaxiOrder.cs" />
+    <Compile Include="Something\Car.cs" />
+    <Compile Include="Something\Addres.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Something\Customer.cs" />
+    <Compile Include="Something\Order.cs" />
+    <Compile Include="Something\TaxiAggegator.cs" />
+    <Compile Include="Something\TaxiDriver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
