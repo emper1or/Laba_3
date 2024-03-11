@@ -69,6 +69,8 @@ namespace Laba_3
             Addres IKIT = new Addres { Coordinates = (55.994637, 92.798755), Street = "Пушкина", House = 13 };
             Addres GOS = new Addres { Coordinates = (56.004256, 92.772263), Street = "Ломоносова", House = 9 };
 
+            Addres Tochka_A = new Addres { Coordinates = (56.008409, 92.766375), Street = "Свобдный", House = 79 };
+            Addres Tochka_B = new Addres { Coordinates = (57.954167, 102.729684), Street = "Мечтателей", House = 46 };
 
             // Adding taxists
 
@@ -78,7 +80,7 @@ namespace Laba_3
 
             Console.WriteLine(Yasha.CreateAnOrder(c_1, IKIT, GOS, true));
 
-            Console.WriteLine(Yasha.CreateAnOrder(c_2, IKIT, GOS, false));
+            Console.WriteLine(Yasha.CreateAnOrder(c_2, Tochka_A, Tochka_B, false));
 
             Console.WriteLine(Yasha.CreateAnOrder(c_2, IKIT, GOS, true));
 

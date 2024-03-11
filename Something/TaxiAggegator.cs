@@ -81,10 +81,11 @@ namespace Laba_3.Something
             }
 
             CreatedOrder +=
-                $"##### \n"+
+                $"##### \n" +
                 $"{customer.Name}, Водитель {bestTaxiDriver.Name} на {bestTaxiDriver.Car.Brend} с гос. номером {bestTaxiDriver.Car.Number} принял Ван на заказ:\n " +
                 $"Место отпарвления: {customer.TempOrder.Departure.Street}  {customer.TempOrder.Departure.House} \n " +
                 $"Место назначения: {customer.TempOrder.Destition.Street}  {customer.TempOrder.Destition.House} \n" +
+                $"Дальность поездки: {customer.TempOrder.Distance}км"+
                 $"##### \n";
 
             return CreatedOrder;

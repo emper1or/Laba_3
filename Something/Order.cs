@@ -19,8 +19,18 @@ namespace Laba_3.Something
 
         public double CalculateDistance()
         {
-            return Math.Sqrt(Math.Pow(Destition.Coordinates.Item1 - Departure.Coordinates.Item1, 2) 
-                             + Math.Pow(Destition.Coordinates.Item2 - Departure.Coordinates.Item2, 2));
+            return Math.Round( Math.Sqrt(Math.Pow(Destition.Coordinates.Item1 - Departure.Coordinates.Item1, 2) 
+                             + Math.Pow(Destition.Coordinates.Item2 - Departure.Coordinates.Item2, 2)), 3) * 100 ;
+        }
+
+        public double Cul_Currect_Dist()
+        {
+            double cos_y = Math.Sin(Departure.Coordinates.Item1) * Math.Sin(-1 * Destition.Coordinates.Item1) +
+                           Math.Cos(Departure.Coordinates.Item1) * Math.Cos(-1 * Destition.Coordinates.Item1) *
+                           Math.Cos(Departure.Coordinates.Item2 - Destition.Coordinates.Item2);
+            double l = Math.Acos(cos_y) * 6371;
+
+            return l;
         }
 
     }
